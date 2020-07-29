@@ -1,0 +1,96 @@
+.button {
+  display: inline-block;
+  padding: 11px 38px 11px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  vertical-align: middle;
+  color: #333333;
+
+  border: 2px solid #333333;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    color: $main-bg-color;
+
+    border-color: $main-bg-color;
+
+    transition: 0.15s;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.button--blue {
+  padding: 16px 40px;
+
+  font-size: 16px;
+  color: #ffffff;
+
+  background-color: $main-bg-color;
+  border: none;
+
+  &:hover {
+    color: #ffffff;
+
+    opacity: 0.95;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.button--yellow {
+  padding: 16px 40px;
+
+  font-size: 16px;
+
+  background-color: #ffe818;
+  border: none;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding-right: 9px;
+    padding-left: 9px;
+  }
+
+  .button--blue {
+    padding: 16px 40px;
+  }
+
+  .button--yellow {
+    padding: 16px 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    padding-right: 39px;
+    padding-left: 39px;
+  }
+
+  .button--blue {
+    padding: 20px 50px;
+  }
+
+  .button--yellow {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+}
+
+@media (min-width: $desktop-widescreen) {
+  .button--blue {
+    padding: 24px 80px;
+  }
+}

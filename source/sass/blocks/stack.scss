@@ -1,0 +1,86 @@
+.stack {
+  margin-top: 75px;
+  margin-bottom: 35px;
+  padding: 20px;
+
+  background-color: $main-bg-color-2;
+}
+
+.stack__title {
+  margin-top: 0;
+
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.stack__list {
+  @include list-reset;
+}
+
+.stack__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 380px;
+  height: 64px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+@media (min-width: 840px) {
+  .stack__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .stack__item {
+    width: 380px;
+    max-width: none;
+    margin-right: 20px;
+    margin-left: 0;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stack {
+    margin-top: 142px;
+    margin-bottom: 120px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .stack__title {
+    margin-bottom: 50px;
+
+    font-size: 40px;
+    line-height: 48px;
+    text-align: left;
+  }
+
+  .stack__item {
+    height: 88px;
+  }
+
+  .stack__item:nth-child(2n) {
+    margin-right: 20px;
+  }
+
+  .stack__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .stack__item--vuejs .stack__logo {
+    margin-right: 34px;
+  }
+}

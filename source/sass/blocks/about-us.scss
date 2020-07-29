@@ -1,0 +1,57 @@
+.about-us {
+  padding: 20px;
+}
+
+.about-us__title {
+  max-width: 330px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  font-size: 26px;
+  line-height: 31px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding-top: 30px;
+  }
+
+  .about-us__title {
+    width: 400px;
+    max-width: none;
+
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .about-us__title {
+    width: 360px;
+    margin-right: 0;
+    margin-left: 0;
+
+    font-size: 36px;
+    line-height: 43px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-widescreen) {
+  .about-us {
+    padding-top: 155px;
+  }
+
+  .about-us__title {
+    margin-bottom: 50px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
+}

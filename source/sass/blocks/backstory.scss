@@ -1,0 +1,123 @@
+.backstory {
+  position: relative;
+
+  padding: 20px;
+
+  text-align: center;
+
+  background-image: url("../img/backstory-bg-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 8.5%;
+  background-size: 280px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/backstory-bg-mobile@2x.png");
+  }
+}
+
+.backstory__title {
+  max-width: 400px;
+  margin: 0 auto 300px;
+
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.backstory__text {
+  max-width: 440px;
+  margin: 20px auto 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .backstory {
+    padding-top: 30px;
+
+    background-image: url("../img/backstory-bg-tablet@1x.png");
+    background-position: center 8%;
+    background-size: 360px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/backstory-bg-tablet@2x.png");
+    }
+
+    @media (min-width: 820px) {
+      background-position: center 15%;
+    }
+  }
+
+  .backstory__title {
+    max-width: 500px;
+    margin-bottom: 400px;
+
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .backstory {
+    padding: 100px 120px;
+
+    text-align: left;
+
+    background-image: url("../img/backstory-bg-desktop@1x.png");
+    background-position: 10px 320px;
+    background-size: 490px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/backstory-bg-desktop@2x.png");
+    }
+  }
+
+  .backstory.page-wrap {
+    width: 1200px;
+  }
+
+  .backstory__title {
+    width: 600px;
+    max-width: none;
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  .backstory__text {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-widescreen) {
+  .backstory {
+    padding: 100px 190px 190px;
+
+    background-image: url("../img/backstory-bg-desktop-widescreen@1x.png");
+    background-position: 48px 333px;
+    background-size: 616px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/backstory-bg-desktop-widescreen@2x.png");
+    }
+  }
+
+  .backstory.page-wrap {
+    width: 1560px;
+  }
+
+  .backstory__title {
+    width: 650px;
+    margin-bottom: 25px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .backstory__text {
+    width: 490px;
+    max-width: none;
+
+    font-size: 20px;
+    line-height: 32px;
+  }
+}

@@ -1,0 +1,175 @@
+.case {
+  padding: 20px;
+}
+
+.case__title {
+  margin-top: 0;
+  margin-bottom: 55px;
+
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.case__list {
+  @include list-reset;
+}
+
+.case__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.case__picture {
+  position: relative;
+}
+
+.case__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 399px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+
+  background-color: $main-bg-color;
+  border-radius: 15px;
+  opacity: 0.9;
+}
+
+.case__link svg {
+  display: block;
+  margin-top: 48px;
+  margin-bottom: 20px;
+
+  transform: rotate(45deg);
+}
+
+.case__picture:hover .case__link {
+  display: flex;
+}
+
+.case__image {
+  width: 280px;
+  height: 399px;
+
+  border-radius: 15px;
+}
+
+.case__subtitle {
+  max-width: 280px;
+  margin: 10px auto;
+
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.case__subtitle a {
+  color: #333333;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.case__logo {
+  display: block;
+  margin: 10px auto 0;
+
+  &--svg {
+    width: 280px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .case__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .case__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 728px;
+    margin: 0 auto;
+  }
+
+  .case__item {
+    margin-right: 59px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .case {
+    margin-bottom: 80px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .case__title {
+    margin-bottom: 50px;
+
+    font-size: 40px;
+    line-height: 48px;
+    text-align: left;
+  }
+
+  .case__list {
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    margin: 0;
+  }
+
+  .case__item {
+    flex-direction: row;
+    width: 1180px;
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+
+  .case__image {
+    width: 679px;
+    height: 399px;
+  }
+
+  .case__wrap {
+    align-self: flex-start;
+    width: 450px;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+
+  .case__subtitle {
+    max-width: none;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .case__logo {
+    margin-top: 25px;
+    margin-right: 0;
+    margin-left: 0;
+
+    &--svg {
+      width: 319px;
+      height: 28px;
+    }
+  }
+}

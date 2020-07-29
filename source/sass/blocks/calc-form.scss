@@ -1,0 +1,115 @@
+.calc-form {
+  margin: 0 auto;
+}
+
+.calc-form__input {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 15px;
+
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+
+  &::placeholder {
+    color: #9a9a9a;
+
+    opacity: 1;
+  }
+}
+
+.calc-form__button {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.calc-form__note {
+  width: 260px;
+  margin: 0 auto;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #9a9a9a;
+}
+
+.calc-form--inline .calc-form__note {
+  color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .calc-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 600px;
+  }
+
+  .calc-form__input,
+  .calc-form__button,
+  .calc-form__note {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .calc-form__note {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .calc-form {
+    margin-right: 0;
+  }
+
+  .calc-form__input {
+    width: 287px;
+    padding: 25px;
+  }
+
+  .calc-form input[type="number"] {
+    width: 294px;
+  }
+
+  .calc-form__button {
+    width: 287px;
+  }
+
+  .calc-form__note {
+    margin-right: 33px;
+  }
+
+  .calc-form--inline {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: auto;
+    margin: 0;
+
+    .calc-form__input {
+      width: 380px;
+      margin: 20px 0;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    input[type="number"] {
+      width: 380px;
+    }
+
+    .calc-form__button {
+      width: 393px;
+      margin: 20px 0;
+    }
+
+    .calc-form__note {
+      width: 600px;
+      margin: 0;
+    }
+  }
+}

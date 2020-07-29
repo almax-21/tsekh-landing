@@ -1,0 +1,45 @@
+.stat-list {
+  @include list-reset;
+}
+
+.stat-list__count {
+  display: inline-block;
+  width: 70px;
+  margin-right: 12px;
+  padding: 15px 5px;
+
+  font-weight: 600;
+  vertical-align: middle;
+  text-align: center;
+  color: $main-bg-color;
+
+  background-color: $main-bg-color-2;
+  border-radius: 5px;
+}
+
+.stat-list__text {
+  display: inline-block;
+  max-width: 250px;
+  margin: 12px 0;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+
+@media (min-width: $desktop-width) {
+  .stat-list__count {
+    width: 96px;
+    height: 56px;
+  }
+
+  .stat-list__text {
+    width: 320px;
+    max-width: none;
+  }
+
+  .stat-list--snowqueen .stat-list__text {
+    width: 230px;
+  }
+}

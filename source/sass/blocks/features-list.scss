@@ -1,0 +1,20 @@
+.features-list {
+  max-width: 260px;
+
+  font-size: 12px;
+  line-height: 16px;
+
+  @include list-reset;
+}
+
+.features-list__item {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+
+  vertical-align: top;
+
+  background-color: #ffffff;
+  border-radius: 4px;
+}

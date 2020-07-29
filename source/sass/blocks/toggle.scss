@@ -1,0 +1,52 @@
+.toggle {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+}
+
+.toggle__bar {
+  position: absolute;
+
+  display: block;
+  width: 30px;
+  height: 4px;
+  padding: 0;
+
+  background-color: $main-bg-color;
+
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+}
+
+.toggle__bar-1 {
+  top: 0;
+}
+
+.toggle__bar-2,
+.toggle__bar-3 {
+  top: 13.5px;
+}
+
+.toggle__bar-3 {
+  right: 0;
+}
+
+.toggle__bar-4 {
+  bottom: 0;
+}
+
+.toggle--active .toggle__bar-1,
+.toggle--active .toggle__bar-4 {
+  opacity: 0;
+}
+
+.toggle--active .toggle__bar-2 {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.toggle--active .toggle__bar-3 {
+  transform: translateY(-50%) rotate(-45deg);
+}

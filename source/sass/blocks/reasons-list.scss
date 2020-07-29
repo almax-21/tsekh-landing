@@ -1,0 +1,121 @@
+.reasons-list {
+  display: flex;
+  flex-direction: column;
+
+  @include list-reset;
+}
+
+.reasons-list__item {
+  position: relative;
+
+  margin-bottom: 25px;
+  padding-top: 130px;
+}
+
+.reasons-list__subtitle {
+  margin: 0 auto;
+}
+
+.reasons-list__text {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.reasons-list__icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 145px;
+  height: 120px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
+  transform: translateX(-50%);
+
+  &--lego {
+    background-image: url("../img/icon-lego@1x.png");
+    background-size: 145px;
+  }
+
+  &--light {
+    background-image: url("../img/icon-light@1x.png");
+  }
+
+  &--dice {
+    background-image: url("../img/icon-dice@1x.png");
+  }
+
+  &--purse {
+    background-image: url("../img/icon-purse@1x.png");
+  }
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .reasons-list__icon {
+    &--lego {
+      background-image: url("../img/icon-lego@2x.png");
+    }
+
+    &--light {
+      background-image: url("../img/icon-light@2x.png");
+    }
+
+    &--dice {
+      background-image: url("../img/icon-dice@2x.png");
+    }
+
+    &--purse {
+      background-image: url("../img/icon-purse@2x.png");
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reasons-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reasons-list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .reasons-list__icon {
+    left: 10%;
+  }
+}
+
+@media (min-width: $desktop-widescreen) {
+  .reasons-list__item {
+    width: 480px;
+    margin: 45px 0;
+    padding-top: 140px;
+
+    &:first-child {
+      margin-top: 80px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .reasons-list__subtitle {
+    margin-bottom: 15px;
+
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .reasons-list__text {
+    width: 470px;
+    max-width: none;
+    margin: 0;
+  }
+}

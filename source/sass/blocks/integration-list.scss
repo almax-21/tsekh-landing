@@ -1,0 +1,51 @@
+.integration-list {
+  font-size: 18px;
+  line-height: 28px;
+
+  @include list-reset;
+}
+
+.integration-list__item {
+  position: relative;
+
+  max-width: 340px;
+  margin: 0 auto;
+  padding-left: 20px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0;
+
+    width: 7px;
+    height: 1px;
+
+    background-color: $main-bg-color;
+    border-radius: 2px;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+}
+
+.integration-list__item--minus {
+  color: #e46868;
+
+  &::before {
+    background-color: #e46868;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .integration-list__item {
+    width: 480px;
+    max-width: none;
+  }
+}

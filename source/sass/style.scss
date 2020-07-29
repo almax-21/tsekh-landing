@@ -1,0 +1,41 @@
+// === foundation ===
+@import "normalize.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "keyframes.scss";
+@import "mixins.scss";
+@import "general.scss";
+@import "blocks/page-wrap.scss";
+// === / foundation ===
+
+// === header ===
+@import "blocks/header.scss";
+@import "blocks/button.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/toggle.scss";
+@import "blocks/site-list.scss";
+// === / header ===
+
+// === main ===
+@import "blocks/preview.scss";
+@import "blocks/backstory.scss";
+@import "blocks/reasons-list.scss";
+@import "blocks/slogan.scss";
+@import "blocks/about-us.scss";
+@import "blocks/services-list.scss";
+@import "blocks/integration-list.scss";
+@import "blocks/order.scss";
+@import "blocks/calc-form.scss";
+@import "blocks/stack.scss";
+@import "blocks/case.scss";
+@import "blocks/stat-list.scss";
+@import "blocks/price.scss";
+@import "blocks/team.scss";
+@import "blocks/more.scss";
+@import "blocks/features-list.scss";
+// === / main ===
+
+// === footer ===
+@import "blocks/footer.scss";
+@import "blocks/social-list.scss";
+// === / footer ===

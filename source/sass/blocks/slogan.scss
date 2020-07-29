@@ -1,0 +1,215 @@
+.slogan {
+  color: #ffffff;
+
+  background-color: #3454f5;
+}
+
+.slogan .page-wrap {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.slogan__logo {
+  margin-bottom: 20px;
+
+  fill: #ffffff;
+}
+
+.slogan__text {
+  max-width: 400px;
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.slogan__arrow {
+  position: absolute;
+
+  animation-name: flashing;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  &--1 {
+    top: 5%;
+    left: 85%;
+
+    opacity: 0.4;
+  }
+
+  &--2 {
+    top: 10%;
+    right: 90%;
+
+    opacity: 0.6;
+
+    animation-name: flashing-reverse;
+  }
+
+  &--3 {
+    right: 90%;
+    bottom: 5%;
+
+    opacity: 0.2;
+  }
+
+  &--4 {
+    bottom: 7%;
+    left: 88%;
+
+    opacity: 0.6;
+
+    animation-name: flashing-reverse;
+  }
+
+  &--5 {
+    display: none;
+  }
+
+  &--6 {
+    display: none;
+  }
+
+  &--7 {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slogan .page-wrap {
+    min-height: 450px;
+    padding: 0;
+  }
+
+  .slogan__logo {
+    width: 160px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .slogan__text {
+    width: 500px;
+    max-width: none;
+
+    font-size: 26px;
+  }
+
+  .slogan__arrow {
+    &--5 {
+      right: 50%;
+      bottom: 83%;
+
+      display: block;
+
+      opacity: 0.3;
+    }
+
+    &--6 {
+      right: 50%;
+      bottom: 5%;
+
+      display: block;
+
+      opacity: 1;
+
+      animation-name: flashing-reverse;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slogan .page-wrap {
+    min-height: 700px;
+  }
+
+  .slogan__logo {
+    width: 210px;
+    height: 53px;
+    margin-bottom: 45px;
+  }
+
+  .slogan__text {
+    width: 600px;
+
+    font-size: 32px;
+  }
+
+  .slogan__arrow {
+    width: 36px;
+    height: 73px;
+
+    &--1 {
+      top: 158px;
+      left: 9px;
+    }
+
+    &--2 {
+      top: 151px;
+      left: 414px;
+    }
+
+    &--3 {
+      top: 94px;
+      right: 216px;
+    }
+
+    &--4 {
+      bottom: 254px;
+      left: 34px;
+    }
+
+    &--5 {
+      bottom: -15px;
+      left: 334px;
+    }
+
+    &--6 {
+      right: 149px;
+      bottom: 97px;
+    }
+
+    &--7 {
+      right: 0;
+      bottom: 355px;
+
+      display: block;
+
+      opacity: 0.6;
+    }
+  }
+}
+
+@media (min-width: $desktop-widescreen) {
+  .slogan .page-wrap {
+    min-height: 900px;
+  }
+
+  .slogan__logo {
+    width: 212px;
+    height: 67px;
+    margin-top: 16px;
+    margin-bottom: 60px;
+  }
+
+  .slogan__text {
+    width: 770px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .slogan__arrow {
+    width: 50px;
+    height: 113px;
+  }
+}
