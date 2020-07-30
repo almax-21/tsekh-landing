@@ -33,15 +33,11 @@
     padding-top: 30px;
 
     background-image: url("../img/backstory-bg-tablet@1x.png");
-    background-position: center 8%;
+    background-position: center 125px;
     background-size: 360px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/backstory-bg-tablet@2x.png");
-    }
-
-    @media (min-width: 820px) {
-      background-position: center 15%;
     }
   }
 

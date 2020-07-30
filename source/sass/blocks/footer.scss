@@ -30,7 +30,7 @@
   line-height: 28px;
 }
 
-.footer__list {
+.footer__list:not(.footer__list--social) {
   @include list-reset;
 }
 
