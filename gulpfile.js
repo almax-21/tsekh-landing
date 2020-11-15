@@ -9,7 +9,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require('gulp-csso');
 var imagemin = require("gulp-imagemin");
-var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify-es').default;
 var del = require("del");
 var server = require("browser-sync").create();
 
