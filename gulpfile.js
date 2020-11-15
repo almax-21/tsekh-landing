@@ -1,17 +1,17 @@
 "use strict";
 
-var gulp = require("gulp");
-var plumber = require("gulp-plumber");
-var sourcemap = require("gulp-sourcemaps");
-var rename = require("gulp-rename");
-var sass = require("gulp-sass");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var csso = require('gulp-csso');
-var imagemin = require("gulp-imagemin");
-var uglify = require('gulp-uglify-es').default;
-var del = require("del");
-var server = require("browser-sync").create();
+const gulp = require("gulp");
+const plumber = require("gulp-plumber");
+const sourcemap = require("gulp-sourcemaps");
+const rename = require("gulp-rename");
+const sass = require("gulp-sass");
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const csso = require('gulp-csso');
+const imagemin = require("gulp-imagemin");
+const uglify = require('gulp-uglify-es').default;
+const del = require("del");
+const server = require("browser-sync").create();
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")

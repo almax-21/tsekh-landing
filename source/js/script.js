@@ -1,6 +1,6 @@
-var header = document.querySelector(".header");
-var navMain = header.querySelector(".main-nav");
-var navToggle = header.querySelector(".toggle");
+const header = document.querySelector(".header");
+const navMain = header.querySelector(".main-nav");
+const navToggle = header.querySelector(".toggle");
 
 header.classList.remove("header--nojs");
 navMain.classList.remove("main-nav--nojs");
