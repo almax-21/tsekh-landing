@@ -39,6 +39,15 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .scroll-up {
+    right: 25px;
+    bottom: 25px;
+
+    transform: translateY(12px);
+  }
+}
+
 .scroll-up--active {
   transform: translateY(0);
   visibility: visible;
@@ -52,5 +61,5 @@
 
   fill: none;
   stroke: #3454f5;
-  stroke-width: 5px;
+  stroke-width: 4px;
 }
